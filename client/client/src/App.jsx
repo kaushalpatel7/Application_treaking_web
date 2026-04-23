@@ -1,15 +1,26 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+import "./App.css"
+export default function MyApp() {
 
-function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>hello </>
-  )
+const data = {
+  "name" : "kaushal",
+  "age" : 19
 }
 
-export default App
+
+  function MyButton() {
+    
+    return (
+    <button >
+      I'm a button
+    </button>
+  );
+}
+  return (
+    <div>
+      <h1>Welcome to my app</h1>
+      <MyButton/><br />
+
+      {data.name} {data.age}
+    </div>
+  );
+}
